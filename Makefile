@@ -4,6 +4,9 @@ CXXDEBUGFLAGS := -g -O0
 CXXRELEASEFLAGS := -O3
 INCLUDES := -I./include
 
+04-part1: 04/part1.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(CXXRELEASEFLAGS) -o 04.out 04/part1.cpp
+
 03-part2: 03/part2.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) $(CXXRELEASEFLAGS) -o 03.out 03/part2.cpp
 
